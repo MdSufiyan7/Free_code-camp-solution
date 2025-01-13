@@ -1,0 +1,6 @@
+function randomWholeNum() {
+  return Math.floor(Math.random()*100);
+}
+let result;
+result=randomWholeNum();
+console.log(result);
