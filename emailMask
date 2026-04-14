@@ -1,0 +1,17 @@
+let email = "acd@gmail.com";
+
+function maskEmail(email) {
+  const atIndex = email.indexOf("@");
+
+  const firstchar = email[0];
+  const lastchar = email[atIndex - 1];
+  const domainoption = email.slice(atIndex);
+
+  const star = "*".repeat(atIndex - 2);
+
+  const finalemail = `${firstchar}${star}${lastchar}${domainoption}`;
+
+  return finalemail;
+}
+
+console.log(maskEmail(email));
